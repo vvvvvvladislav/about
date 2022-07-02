@@ -1,0 +1,238 @@
+body
+    margin: 0
+    font-family: 'Dela Gothic One'
+    word-spacing: 0.1em
+
+@media (max-width: 768px) 
+    body
+        font-size: 3.05vmin
+
+@media (min-width: 769px) 
+    body
+        font-size: 2.45vmin
+
+h1
+    margin: 0
+
+@media (max-width: 768px) 
+    h1
+        font-size: 4.3em
+        margin: 0
+
+@media (min-width: 769px) 
+    h1
+        font-size: 4em
+        margin: 0
+
+hr 
+    display: block
+    margin-top: 0.1em
+    margin-bottom: 0.1em
+    margin-left: auto
+    margin-right: auto
+    border-style: solid
+    border-width: 1px
+
+header
+    overflow-x: hidden
+    margin: 0
+
+.ticker
+    background-color: red
+    text-align: right
+    top: 0px
+    right: 0px
+
+.ticker__inner
+    height: 15vh
+    display: inline-block
+    white-space: nowrap
+    animation-iteration-count: infinite
+    animation-timing-function: linear
+    animation-name: customticker
+    animation-duration: 10s
+
+@keyframes customticker 
+  0% 
+    transform: translate3d(0, 0, 0)
+    visibility: visible
+  100%
+    transform: translate3d(-25%, 0, 0)
+
+@media (max-width: 767px) 
+    .information
+        height: 70vh
+        display: grid
+        grid-template-rows: 1fr 2fr
+        background-color: #F806CC
+
+@media (min-width: 768px) 
+    .information
+        height: 70vh
+        display: grid
+        grid-template-columns: 1fr 2fr
+        background-color: #F806CC
+
+@media (max-width: 320px)
+    .skills
+        font-size: 5.5vmin
+
+@media (min-width: 321px) and (max-width: 375px)
+    .skills
+        font-size: 4.8vmin
+
+@media (min-width: 376px) and (max-width: 425px)
+    .skills
+        font-size: 3.7vmin
+
+@media (min-width: 426px) and (max-width: 767px)
+    .skills
+        font-size: 3.3vmin
+
+@media (max-width: 768px)
+    .skills__extended
+        display: none
+
+.text
+    padding: 1em
+    background-color: #A91079
+    white-space: pre-line
+
+@media (max-width: 768px)
+    .text
+        span
+            display: none
+
+.projects
+    height: 100vh
+    background-color: #2E0249
+    h1
+        text-align: center
+        color: white
+
+.slider
+    height: 80%
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+.project
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+
+.project__item
+    display: grid
+    width: 24em
+    height: 16.5em
+    background-color: green
+    margin: 0.5em
+    border-radius: 1em
+    grid-template-rows: 2.24fr 2.8fr 1.2fr
+    transition: all .2s ease-in-out
+    &:hover
+        transform: scale(1.02)
+
+.project__item__image
+    border-radius: 1em 1em 0 0
+    background-color: red
+    background-size: cover
+
+.project__item__text
+    background-color: #A91079
+    border-left: 2px solid #570A57
+    border-right: 2px solid #570A57
+
+.project__item__button 
+    box-sizing: border-box
+    width: 100%
+    height: 100%
+    background-color: #F806CC
+    border-bottom: 2px solid #A91079
+    border-left: 2px solid #A91079
+    border-right: 2px solid #A91079
+    color: white
+    text-align: center
+    text-decoration: none
+    display: inline-block
+    transition-duration: 0.4s
+    cursor: pointer
+    border-radius: 0 0 1em 1em
+    &:hover 
+        background-color: #A91079
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+        border-bottom: 2px solid #570A57
+        border-left: 2px solid #570A57
+        border-right: 2px solid #570A57
+
+#klava
+    .project__item__image
+        background-image: url('assets/klava.png')
+
+#slider
+    .project__item__image
+        background-image: url('assets/slider.png')
+
+@media (max-width: 768px)
+    #slider
+        display: none
+
+#shelter
+    .project__item__image
+        background-image: url('assets/shelter.png')
+
+@media (max-width: 768px)
+    #shelter
+        display: none
+
+.contacts
+    background-color: #570A57
+    h1
+        text-align: center
+        color: white
+
+.contact
+    display: grid
+    height: 10vh
+    grid-template-columns: 1fr 1fr 1fr
+    text-align: center
+    color: white
+
+@media (max-width: 768px)
+    .button
+        margin-top: 2em
+        display: flex
+        gap: 4em
+
+@media (min-width: 769px)
+    .button
+        display: none
+
+.button__inner
+        background-color: #F806CC
+        border: 2px solid #A91079
+        color: white
+        text-align: center
+        display: inline-block
+        transition-duration: 0.4s
+        cursor: pointer
+        border-radius: 100%
+        &:hover 
+            background-color: #A91079
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+            border: 2px solid #570A57
+
+@media (min-width: 768px)
+    .button__inner
+        width: 3em
+        height: 3em
+        span
+            font-size: 5vmin
+
+@media (max-width: 767px)
+    .button__inner
+        width: 5em
+        height: 5em
+        span
+            font-size: 8vmin
