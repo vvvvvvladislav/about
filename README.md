@@ -1,3 +1,1 @@
-# about
-
-my own resume page 
+https://vvvvvvladislav.github.io/about/index.html
