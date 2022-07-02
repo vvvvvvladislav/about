@@ -168,7 +168,7 @@ header {
   margin: 0.5em;
   border-radius: 1em;
   grid-template-rows: 2.24fr 2.8fr 1.2fr;
-  transition: opacity 1s;
+  transition: all 0.2s ease-in-out;
 }
 .project__item:hover {
   transform: scale(1.02);
